@@ -1,0 +1,289 @@
+/*Root and top level settings*/
+:root {
+  --primary-font: "Nunito", sans-serif;
+
+  /*Color variables*/
+  --p-red: red;
+  --p-blue: blue;
+  --p-yellow: yellow;
+  --p-green: green;
+  --p-purple: purple;
+  --p-orange: orange;
+  --p-pinK: pink;
+  --p-lightgrey: lightgrey;
+  --p-darkgrey: darkgrey;
+  --p-extralightgrey: #e7e5e5;
+}
+
+body {
+  font-family: var(--primary-font) !important;
+}
+
+/*Header Layout*/
+.header {
+  width: 100%;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+}
+
+.h-left {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  align-items: center;
+}
+
+.h-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+}
+
+.h-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.h-title {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px 10px;
+}
+
+.h-item {
+  margin: 0px 30px;
+}
+
+.admin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-button > p {
+  margin: 0px;
+  font-weight: 100;
+}
+
+.admin-button > div {
+  font-size: 1.3em;
+}
+
+/*Buttons*/
+
+button {
+  font-family: var(--primary-font);
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+button:hover {
+  background-color: var(--p-lightgrey);
+}
+
+button:focus {
+  outline: none;
+}
+
+.button {
+  font-family: var(--primary-font);
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+.button:hover {
+  background-color: var(--p-lightgrey);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.lbutton {
+  border-width: 3px;
+  font-size: 25px;
+}
+
+.tbutton {
+  border: none;
+  padding: 0px;
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.tbutton:hover {
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+/*inputs*/
+
+input {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  font-family: var(--primary-font);
+  background-color: var(--p-extralightgrey);
+}
+
+input:focus {
+  background-color: white;
+  outline: none;
+}
+
+textarea {
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  font-family: var(--primary-font);
+  background-color: var(--p-extralightgrey);
+  width: 400px;
+  height: 150px;
+}
+
+textarea:focus {
+  background-color: white;
+}
+
+/*Colors*/
+
+.red {
+  background-color: var(--p-red);
+  border-color: var(--p-red);
+}
+
+.tred {
+  color: var(--p-red);
+}
+
+.bred {
+  color: white;
+  background-color: var(--p-red);
+  border-color: var(--p-red);
+}
+
+.bred:hover {
+  background-color: white;
+  color: var(--p-red);
+}
+
+.tdark {
+  color: black;
+}
+
+.tlight {
+  color: white;
+}
+
+/*homepage layout*/
+
+.jumbotron {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-primary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.home-primary .largeleft {
+  grid-column: 1/4;
+}
+
+.home-primary .smallleft {
+  grid-column: 1/3;
+}
+
+.home-primary .largeright {
+  grid-column: 3/6;
+}
+
+.home-primary .smallright {
+  grid-column: 4/6;
+}
+
+/*Basic Layout*/
+
+.centerchild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labeled {
+  position: relative;
+}
+
+.br-label {
+  position: absolute;
+  right: -5%;
+  bottom: -5%;
+}
+
+.bl-label {
+  position: absolute;
+  left: -5%;
+  bottom: -5%;
+}
+
+.tr-label {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+}
+
+.tl-label {
+  position: absolute;
+  left: -5%;
+  top: -5%;
+}
+
+/*Popups*/
+.gob {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 3px 3px 5px black;
+}
+
+/*Miscellanous*/
+
+.nomargin {
+  margin: 0px;
+}
